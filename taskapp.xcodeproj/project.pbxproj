@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,10 @@
 		184F411B23EA6D6000FB04B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184F411923EA6D6000FB04B6 /* Main.storyboard */; };
 		184F411D23EA6D6100FB04B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184F411C23EA6D6100FB04B6 /* Assets.xcassets */; };
 		184F412023EA6D6100FB04B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184F411E23EA6D6100FB04B6 /* LaunchScreen.storyboard */; };
-		184F412823EA890000FB04B6 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F412723EA890000FB04B6 /* inputViewController.swift */; };
+		184F412823EA890000FB04B6 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F412723EA890000FB04B6 /* InputViewController.swift */; };
+		1856663623F9845F00D27CEF /* categoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856663523F9845F00D27CEF /* categoryViewController.swift */; };
+		1856663823F9A27200D27CEF /* CategoryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856663723F9A27200D27CEF /* CategoryClass.swift */; };
+		18E5446523EF9B7700021927 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5446423EF9B7700021927 /* Task.swift */; };
 		A09BD3BCA3887CDE61D45F1E /* Pods_taskapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206453B4EA18E611635076DD /* Pods_taskapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +29,10 @@
 		184F411C23EA6D6100FB04B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184F411F23EA6D6100FB04B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184F412123EA6D6200FB04B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		184F412723EA890000FB04B6 /* inputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
+		184F412723EA890000FB04B6 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		1856663523F9845F00D27CEF /* categoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryViewController.swift; sourceTree = "<group>"; };
+		1856663723F9A27200D27CEF /* CategoryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryClass.swift; sourceTree = "<group>"; };
+		18E5446423EF9B7700021927 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		19AD6AC8036906F13B312BCE /* Pods-taskapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.release.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.release.xcconfig"; sourceTree = "<group>"; };
 		206453B4EA18E611635076DD /* Pods_taskapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B4FD7735182C159ECA24F4 /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,7 +56,6 @@
 				30B4FD7735182C159ECA24F4 /* Pods-taskapp.debug.xcconfig */,
 				19AD6AC8036906F13B312BCE /* Pods-taskapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,11 +83,14 @@
 				184F411323EA6D6000FB04B6 /* AppDelegate.swift */,
 				184F411523EA6D6000FB04B6 /* SceneDelegate.swift */,
 				184F411723EA6D6000FB04B6 /* ViewController.swift */,
-				184F412723EA890000FB04B6 /* inputViewController.swift */,
+				184F412723EA890000FB04B6 /* InputViewController.swift */,
+				1856663523F9845F00D27CEF /* categoryViewController.swift */,
 				184F411923EA6D6000FB04B6 /* Main.storyboard */,
 				184F411C23EA6D6100FB04B6 /* Assets.xcassets */,
 				184F411E23EA6D6100FB04B6 /* LaunchScreen.storyboard */,
 				184F412123EA6D6200FB04B6 /* Info.plist */,
+				18E5446423EF9B7700021927 /* Task.swift */,
+				1856663723F9A27200D27CEF /* CategoryClass.swift */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -211,9 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				184F411823EA6D6000FB04B6 /* ViewController.swift in Sources */,
+				1856663823F9A27200D27CEF /* CategoryClass.swift in Sources */,
 				184F411423EA6D6000FB04B6 /* AppDelegate.swift in Sources */,
+				18E5446523EF9B7700021927 /* Task.swift in Sources */,
 				184F411623EA6D6000FB04B6 /* SceneDelegate.swift in Sources */,
-				184F412823EA890000FB04B6 /* inputViewController.swift in Sources */,
+				1856663623F9845F00D27CEF /* categoryViewController.swift in Sources */,
+				184F412823EA890000FB04B6 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
